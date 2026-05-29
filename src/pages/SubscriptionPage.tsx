@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import { api } from '../api/client';
 
 const PLAN_CONFIG: Record<string, {
   label: string; price: string; priceAnual: string;

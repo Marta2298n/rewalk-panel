@@ -93,7 +93,6 @@ function ChallengeCard({ challenge: c, isAdmin, onUpdated, past = false }: {
 }) {
   const [loading, setLoading] = useState(false);
   const [calendarDone, setCalendarDone] = useState(false);
-  const { role } = useAuth();
   const userId = getUserIdFromToken();
   const isOwn = !!userId && c.creator_id === userId;
 
