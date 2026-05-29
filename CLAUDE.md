@@ -58,12 +58,16 @@ public/
 ```
 Color principal: `#E8472A` (rojo Rewalk)
 
+## URLs
+- **Producción:** `https://bucolic-pithivier-1c6c4c.netlify.app` (Netlify)
+- **Repo:** `https://github.com/Marta2298n/rewalk-panel`
+
 ## Build y deploy
 ```bash
 npm run build   # Genera dist/
 ```
-No hay deploy automatizado aún — manual o pendiente configurar Netlify/Vercel.
-El panel es interno, no tiene dominio público todavía.
+Deploy automático en Netlify al hacer push a `main`.
+Para dominio propio: configurar `panel.rewalk.es` en Netlify (igual que rewalk.es).
 
 ## Notas técnicas
 - No usa React Router; la navegación entre "páginas" es state local (`tab` con useState)
