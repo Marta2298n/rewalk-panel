@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="150" viewBox="0 0 680 150">
+  <!-- "rew" -->
+  <text x="36" y="102" font-family="Arial Black, sans-serif" font-size="76" font-weight="900" fill="#ffffff" letter-spacing="-3">rew</text>
+
+  <!-- A roja personalizada -->
+  <polygon points="182,102 232,28 282,102" fill="#E8472A"/>
+  <line x1="196" y1="71" x2="268" y2="71" stroke="#111111" stroke-width="8"/>
+
+  <!-- "lk" -->
+  <text x="286" y="102" font-family="Arial Black, sans-serif" font-size="76" font-weight="900" fill="#ffffff" letter-spacing="-3">lk</text>
+
+  <!-- Tagline -->
+  <text x="36" y="130" font-family="Arial, sans-serif" font-size="12" fill="#E8472A" letter-spacing="2.5" font-weight="700">MOVE MORE · EMIT LESS · EARN ALWAYS</text>
+</svg>
