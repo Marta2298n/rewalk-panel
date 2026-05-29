@@ -1372,3 +1372,164 @@ input:focus { border-color: #111111; }
   cursor: pointer;
 }
 .limit-period-select:focus { border-color: #E8472A; outline: none; }
+
+/* ══════════════════════════════════════════════════════════════
+   RESPONSIVE MÓVIL — breakpoint principal 768px
+   ══════════════════════════════════════════════════════════════ */
+@media (max-width: 768px) {
+
+  /* ── Header ── */
+  .dashboard-header {
+    padding: 10px 16px;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .header-tagline { display: none; }
+  .header-nav {
+    gap: 4px;
+    flex-wrap: wrap;
+  }
+  .nav-btn {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+  .btn-logout {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+
+  /* ── Main content ── */
+  .dashboard-main {
+    padding: 16px;
+  }
+  .dashboard-main h2 {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+
+  /* ── Métricas ── */
+  .metrics-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-bottom: 24px;
+  }
+  .metric-card {
+    padding: 18px 14px;
+  }
+  .metric-icon { font-size: 28px; margin-bottom: 8px; }
+  .metric-value { font-size: 24px; }
+  .metric-label { font-size: 12px; }
+
+  /* ── Dashboard bottom grid ── */
+  .dashboard-bottom-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    margin-top: 20px;
+  }
+
+  /* ── Login ── */
+  .login-card {
+    padding: 32px 24px;
+    margin: 16px;
+  }
+
+  /* ── Tabla de empleados → cards ── */
+  .employee-table thead { display: none; }
+  .employee-table tbody tr {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border: 1px solid #e8e4e0;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 12px 14px;
+  }
+  .employee-table td {
+    padding: 4px 0;
+    border-bottom: none;
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .employee-table td::before {
+    content: attr(data-label);
+    font-weight: 600;
+    color: #888;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+  }
+
+  /* ── Rewards ── */
+  .rewards-grid {
+    grid-template-columns: 1fr;
+  }
+  .reward-form {
+    grid-template-columns: 1fr;
+  }
+
+  /* ── Formulario registrar actividad ── */
+  .form-row { grid-template-columns: 1fr; gap: 12px; }
+  .activity-type-selector { flex-direction: column; }
+
+  /* ── Registro empleado ── */
+  .register-form { grid-template-columns: 1fr; }
+
+  /* ── Superadmin ── */
+  .superadmin-header { flex-direction: column; gap: 16px; }
+  .companies-grid { grid-template-columns: 1fr; }
+  .create-company-form { grid-template-columns: 1fr; }
+  .dist-row {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 4px;
+  }
+  .dist-bar-wrap { grid-column: 1 / -1; }
+
+  /* ── Sub-tabs ── */
+  .sub-tabs {
+    gap: 4px;
+    overflow-x: auto;
+    padding-bottom: 6px;
+  }
+  .sub-tab-btn {
+    padding: 6px 12px;
+    font-size: 13px;
+    white-space: nowrap;
+  }
+
+  /* ── Employee search + header ── */
+  .employees-list-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .employee-search { width: 100%; }
+
+  /* ── Challenges ── */
+  .challenge-card { padding: 16px; }
+  .challenge-card-top { flex-direction: column; gap: 8px; }
+  .challenge-admin-actions { flex-wrap: wrap; }
+  .challenge-type-selector { flex-direction: column; }
+
+  /* ── Plans grid ── */
+  .plans-grid { grid-template-columns: 1fr; }
+
+  /* ── Redemptions ── */
+  .redemption-row-main { flex-direction: column; align-items: flex-start; gap: 4px; }
+
+  /* ── Modal ── */
+  .modal-box { padding: 24px 20px; }
+  .redemption-code { font-size: 24px; letter-spacing: 2px; }
+
+  /* ── Points banner ── */
+  .points-banner { padding: 14px 16px; }
+  .points-value { font-size: 22px; }
+}
+
+/* Pantallas muy pequeñas (<400px) */
+@media (max-width: 400px) {
+  .metrics-grid { grid-template-columns: 1fr; }
+  .nav-btn { padding: 5px 7px; font-size: 11px; }
+  .header-brand img { height: 28px; }
+}
